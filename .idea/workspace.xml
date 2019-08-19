@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a3817392-82c2-4d74-88de-d2a5614d2048" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/dictionaries/antonio.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fe-foundation/src/Components/Logo/logo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fe-foundation/src/Components/Logo/logo.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/fe-foundation/src/Components/NavBar/navbar.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/fe-foundation/src/Components/NavBar/navbar.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/fe-foundation/src/Containers/Carousel/carousel.css" afterDir="false" />
