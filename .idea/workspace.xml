@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3817392-82c2-4d74-88de-d2a5614d2048" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fe-foundation/src/Containers/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/antonio.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fe-foundation/src/Components/NavBar/navbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fe-foundation/src/Components/NavBar/navbar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fe-foundation/src/Containers/Carousel/carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fe-foundation/src/Containers/Carousel/carousel.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fe-foundation/src/Containers/Carousel/images/slide1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fe-foundation/src/Containers/Carousel/images/slide2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fe-foundation/src/Containers/Carousel/images/slide3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fe-foundation/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fe-foundation/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fe-foundation/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/fe-foundation/src/Containers/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fe-foundation/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fe-foundation/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/fe-foundation/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fe-foundation/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/fe-foundation/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fe-foundation/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/fe-foundation/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fe-foundation/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe-foundation/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/fe-foundation/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe-foundation/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/fe-foundation/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe-foundation/src/Containers/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/fe-foundation/src/Containers/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe-foundation/src/Containers/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/fe-foundation/src/Containers/App.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +26,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1PefXZqvCsDN7xRs4MFRDsjnu9R" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -35,6 +39,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fe-foundation/src/Containers/Carousel/images" />
+      <recent name="$PROJECT_DIR$/fe-foundation/src/Containers/Carousel" />
+      <recent name="$PROJECT_DIR$/fe-foundation/src/Containers/Carousel-Item" />
+      <recent name="$PROJECT_DIR$/fe-foundation/src/Components" />
       <recent name="$PROJECT_DIR$/fe-foundation/src/Containers" />
     </key>
   </component>
