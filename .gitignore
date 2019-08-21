@@ -2,7 +2,8 @@
 
 # dependencies
 /.idea
-/node_modules
+/.idea/workplace.xml
+*/node_modules
 /.pnp
 .pnp.js
 
