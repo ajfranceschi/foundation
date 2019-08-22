@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c98599ef-b968-4228-a291-3e4c1c42219f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/be-foundation/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/be-foundation/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/be-foundation/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/be-foundation/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/be-foundation/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/be-foundation/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe-foundation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fe-foundation/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe-foundation/src/Components/Logo/logo.css" beforeDir="false" afterPath="$PROJECT_DIR$/fe-foundation/src/Components/Logo/logo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe-foundation/src/Components/NavBar/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/fe-foundation/src/Components/NavBar/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe-foundation/src/Components/NavBar/navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fe-foundation/src/Components/NavBar/navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe-foundation/src/Containers/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/fe-foundation/src/Containers/App.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1PlV7uqnhgrhY92w5g3pYOozlkM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c98599ef-b968-4228-a291-3e4c1c42219f" name="Default Changelist" comment="" />
+      <created>1566448505933</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566448505933</updated>
+      <workItem from="1566448507295" duration="53000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

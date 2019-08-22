@@ -1,9 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
+const cors = require('cors');
 const knex = require('knex');
 
-
+const app = express();
+app.use(cors());
 // declare db and configure knex's connection.
 const db = knex({
     client : 'pg',
@@ -16,11 +18,10 @@ const db = knex({
     }
 });
 
-const app = express();
+
 
 app.use('/', (req, res) => {
-   res.send('<h1> Hello Node.js </h1>');
-
+   db('users').select('*').returning('*').then(data => res.json(data));
    // db('users').returning('id').insert({
    //     firstname: 'FirstName',
    //     lastname: 'LastName',
