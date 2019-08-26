@@ -10,10 +10,10 @@ app.use(cors());
 const db = knex({
     client : 'pg',
     connection : {
-        host: 'ec2-23-23-182-18.compute-1.amazonaws.com',
-        user: 'awweymdmpvbxwp',
-        password: '0f8a10fc068a58a568a7ccf7c5b5e51152140d62d5ef283f80b616d1f94ac11a',
-        database: 'd4oososc631cjs',
+        host: 'ec2-50-17-233-158.compute-1.amazonaws.com',
+        user: 'xhfrriuwtqpiak',
+        password: 'f517daeb6c8ee8ef9aeb94c84323d54ecf2130242183405910a6ec44f4cee3c8',
+        database: 'dbql9jue2vfvqo',
         ssl: true
     }
 });
