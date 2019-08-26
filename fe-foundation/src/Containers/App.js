@@ -10,7 +10,7 @@ class App extends Component {
     constructor() {
         super();
         this.state = {
-            route: 'login',
+            route: 'register',
             component: null
         }
     }
@@ -24,7 +24,10 @@ class App extends Component {
 
     loginBtnPressed = (event) => {
         event.preventDefault();
-        console.log(event);
+    };
+
+    registerBtnPressed =  (newState) => {
+        console.log(newState);
     };
 
 
@@ -40,7 +43,7 @@ class App extends Component {
         } else if (this.state.route === 'login') {
             return <Login onRouteChange={this.onRouteChange} loginBtnPressed={this.loginBtnPressed}/>
         } else if (this.state.route === 'register') {
-            return <Register onRouteChange={this.onRouteChange}/>
+            return <Register onRouteChange={this.onRouteChange} registerBtnPressed={this.registerBtnPressed}/>
         }
     }
 }

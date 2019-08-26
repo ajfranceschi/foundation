@@ -1,8 +1,35 @@
 import React, {Component} from 'react';
 import './register.css';
 import Navbar from "../../Components/NavBar/navbar";
+import bcrypt from 'bcryptjs';
 
 class Register extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            name: '',
+            email: '',
+            password: ''
+        }
+    }
+
+    nameTextFieldChanged = (event) => {
+        this.setState(Object.assign({}, this.state, {name: event.target.value}));
+    };
+
+    emailTextFieldChanged = (event) => {
+        this.setState(Object.assign({}, this.state, {email: event.target.value}));
+    };
+
+    passwordTextFieldChanged = (event) => {
+        const unsalted = event.target.value;
+        const rounds = 10;
+        const salt = bcrypt.genSaltSync(rounds);
+        const password = bcrypt.hashSync(unsalted, salt);
+        this.setState(Object.assign({}, this.state, {password: password}));
+    };
+
     render() {
         return (
             <div className="App">
@@ -19,6 +46,7 @@ class Register extends Component {
                                         id='nameInput'
                                         placeholder='Enter your name'
                                         className='form-control text-center'
+                                        onChange={this.nameTextFieldChanged}
                                     />
                                 </div>
                             </div>
@@ -30,6 +58,7 @@ class Register extends Component {
                                         id='emailInput'
                                         placeholder='me@awesome.com'
                                         className='form-control text-center'
+                                        onChange={this.emailTextFieldChanged}
                                     />
                                 </div>
                             </div>
@@ -37,15 +66,21 @@ class Register extends Component {
                                 <label htmlFor="emailInput" className=''>Password:</label>
                                 <div className="col-sm-10 m-auto">
                                     <input
-                                        type="email"
-                                        id='emailInput'
+                                        type="password"
+                                        id='passwordInput'
                                         placeholder='Shhhhh'
                                         className='form-control text-center'
+                                        onChange={this.passwordTextFieldChanged}
                                     />
                                 </div>
                             </div>
 
-                            <button className='btn btn-outline-dark mt-4' onClick={this.props.loginBtnPressed}>Submit</button>
+                            <button className='btn btn-outline-dark mt-4' onClick={
+                                (event) => {
+                                    event.preventDefault();
+                                    this.props.registerBtnPressed(this.state)
+                                }
+                            }>Submit</button>
                         </form>
                     </div>
                 </div>
