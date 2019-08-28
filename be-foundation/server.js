@@ -3,9 +3,14 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 const cors = require('cors');
 const knex = require('knex');
+const register = require('./controllers/register');
 
 const app = express();
 app.use(cors());
+app.use(bodyParser.json());
+
+
+
 // declare db and configure knex's connection.
 const db = knex({
     client : 'pg',
@@ -20,13 +25,18 @@ const db = knex({
 
 
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
    db('users').select('*').returning('*').then(data => res.json(data));
    // db('users').returning('id').insert({
    //     firstname: 'FirstName',
    //     lastname: 'LastName',
    //     email: 'email3@domain.com'
    // })
+});
+
+app.post('/register', (req, res) => {
+    console.log('hit /register endpoint');
+    register.handleRegister(req, res, db, bcrypt);
 });
 
 
