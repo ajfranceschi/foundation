@@ -1,11 +1,11 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-*/.idea
-*.idea/*
 */node_modules
 */.pnp
 */.pnp.js
+
+
 
 # testing
 */coverage
@@ -14,6 +14,10 @@
 */build
 
 # misc
+.idea/*
+*/.idea
+*.idea/*
+*/.idea/*
 */.DS_Store
 */.env.local
 */.env.development.local
