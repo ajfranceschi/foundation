@@ -27,7 +27,17 @@ class App extends Component {
     };
 
     registerBtnPressed =  (newState) => {
-        console.log(newState);
+        fetch('http://localhost:3000/register', {
+            method: 'post',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                'name': newState.name,
+                'email': newState.email,
+                'password': newState.password
+            })
+        })
+            .then(response => response.json())
+            .then(data => console.log(data));
     };
 
 

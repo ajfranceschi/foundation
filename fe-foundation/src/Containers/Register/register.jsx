@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './register.css';
 import Navbar from "../../Components/NavBar/navbar";
-import bcrypt from 'bcryptjs';
+// import bcrypt from 'bcryptjs';
 
 class Register extends Component {
     constructor(props) {
@@ -23,11 +23,7 @@ class Register extends Component {
     };
 
     passwordTextFieldChanged = (event) => {
-        const unsalted = event.target.value;
-        const rounds = 10;
-        const salt = bcrypt.genSaltSync(rounds);
-        const password = bcrypt.hashSync(unsalted, salt);
-        this.setState(Object.assign({}, this.state, {password: password}));
+        this.setState(Object.assign({}, this.state, {password: event.target.value}));
     };
 
     render() {
@@ -37,7 +33,7 @@ class Register extends Component {
                 <h1 className='mt-5'>Register</h1>
                 <div className="row mt-5">
                     <div className="container">
-                        <form className='col-lg-6 m-auto'>
+                        <form className='col-lg-6 m-auto' id='registerForm'>
                             <div className='form-group justify-content-center'>
                                 <label htmlFor="nameInput" className=''>Name:</label>
                                 <div className="col-sm-10 m-auto">
@@ -78,6 +74,7 @@ class Register extends Component {
                             <button className='btn btn-outline-dark mt-4' onClick={
                                 (event) => {
                                     event.preventDefault();
+                                    document.getElementById('registerForm').reset();
                                     this.props.registerBtnPressed(this.state)
                                 }
                             }>Submit</button>
