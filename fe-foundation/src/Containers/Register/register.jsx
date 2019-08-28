@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './register.css';
 import Navbar from "../../Components/NavBar/navbar";
-// import bcrypt from 'bcryptjs';
 
 class Register extends Component {
     constructor(props) {
