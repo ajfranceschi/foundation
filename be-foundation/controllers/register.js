@@ -1,13 +1,8 @@
 
 
 const handleRegister = (req, res, database, bcrypt) => {
-
     const {name, email, password} = req.body;
-    // hash password
-    const saltRounds = 10;
-    const salt = bcrypt.genSaltSync(saltRounds);
-    const hash = bcrypt.hashSync(password, salt);
-
+    
     if (!name || !email || !password) {
         let errorObject = {};
 
@@ -27,10 +22,36 @@ const handleRegister = (req, res, database, bcrypt) => {
                 passwordError: '<div class="alert alert-danger" role="alert">Please verify your Password.</div>'
             });
         }
-        res.status(500).json(errorObject);
-    } else {
-        res.json({name, email, password, hash});
+
+        Object.assign(errorObject, {}, {isError: true})
+        res.status(400).json(errorObject);
     }
+    
+    
+    // hash password
+    const saltRounds = 10;
+    const salt = bcrypt.genSaltSync(saltRounds);
+    const hash = bcrypt.hashSync(password, salt);
+
+    database.transaction(trx => {
+        trx('login')
+            .insert({
+                email: email,
+                pwhash: hash
+            })
+            .returning('email')
+            .then(loginEmail => {
+                return trx('users')
+                    .returning('*')
+                    .insert({
+                        name: name,
+                        email: email
+                    })
+                    .then(user => res.json(user))
+            })
+            .then(trx.commit)
+            .catch(trx.rollback);
+    }).catch(error => res.status(400).json('Error registering user: ', error));
 };
 
 module.exports = {

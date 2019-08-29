@@ -37,7 +37,9 @@ class App extends Component {
             })
         })
             .then(response => response.json())
-            .then(data => console.log(data));
+            .then(data => {
+                console.log(data);
+            });
     };
 
 
@@ -53,7 +55,7 @@ class App extends Component {
         } else if (this.state.route === 'login') {
             return <Login onRouteChange={this.onRouteChange} loginBtnPressed={this.loginBtnPressed}/>
         } else if (this.state.route === 'register') {
-            return <Register onRouteChange={this.onRouteChange} registerBtnPressed={this.registerBtnPressed}/>
+            return <Register onRouteChange={this.onRouteChange} registerBtnPressed={this.registerBtnPressed} />
         }
     }
 }
